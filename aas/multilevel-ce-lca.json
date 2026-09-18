@@ -1,0 +1,5566 @@
+{
+  "assetAdministrationShells": [
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "https://smartfactory.de/aas/nano/semitrailer-body-white/1",
+      "idShort": "Nano_SemitrailerBodyWhite",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Nano SemitrailerBodyWhite"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Nano level: one identifiable semitrailer body-white product instance with an IDTA Digital Nameplate."
+        }
+      ],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://smartfactory.de/assets/d081a148-9564-4755-85b7-d7e3a3d64fb8",
+        "assetType": "Product"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/nano/digital-nameplate/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/nano/production-inventory/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/nano/circularity-and-lca/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/multilevel/linkage/1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "https://smartfactory.de/aas/micro/smartfactory-kl/1",
+      "idShort": "Micro_SmartFactoryKL",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Micro SmartFactoryKL"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Micro level: IDTA 02075 factory automation planning data plus the annual reporting boundary that produces the product instance."
+        }
+      ],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://smartfactory.de/assets/factory/smartfactory-kl",
+        "assetType": "Factory"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/micro/factory-automation-data-for-plant-planning/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/micro/reporting-and-energy/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/micro/aggregated-inventory/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/micro/circularity-and-lca/1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://smartfactory.de/aas/submodels/multilevel/linkage/1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "Nameplate",
+      "description": [
+        {
+          "language": "en",
+          "text": "IDTA 02006-3-0 Digital Nameplate instantiated for the semitrailer body-white product."
+        }
+      ],
+      "administration": {
+        "version": "1",
+        "revision": "0",
+        "templateId": "https://admin-shell.io/IDTA 02006-3-0"
+      },
+      "id": "https://smartfactory.de/aas/submodels/nano/digital-nameplate/1",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/nameplate/3/0/Nameplate"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "URIOfTheProduct",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABN590#002"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-ABH173#003"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:anyURI",
+          "value": "https://smartfactory.de/assets/d081a148-9564-4755-85b7-d7e3a3d64fb8",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABA565#009"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAO677#004"
+                }
+              ]
+            }
+          ],
+          "value": [
+            {
+              "language": "en",
+              "text": "SmartFactory-KL"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "idShort": "ManufacturerProductDesignation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABA567#009"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAW338#003"
+                }
+              ]
+            }
+          ],
+          "value": [
+            {
+              "language": "en",
+              "text": "Semitrailer Body White"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "idShort": "AddressInformation",
+          "description": [
+            {
+              "language": "en",
+              "text": "Note: this set of information is defined by SMT drop-in \"Address Information\""
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/AddressInformation"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "https://admin-shell.io/smt-dropin/smt-dropin-use/1/0"
+                }
+              ]
+            },
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0112/2///61360_7#AAS002#001"
+                }
+              ]
+            },
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAQ837#008/0173-1#01-ADR448#008"
+                }
+              ]
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "ManufacturerProductRoot",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61360_7#AAS011#001"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAU732#003"
+                }
+              ]
+            }
+          ],
+          "value": [
+            {
+              "language": "en",
+              "text": "Semitrailer"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "idShort": "ManufacturerProductFamily",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABP464#002"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAU731#003"
+                }
+              ]
+            }
+          ],
+          "value": [
+            {
+              "language": "en",
+              "text": "Semitrailer"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "idShort": "ManufacturerProductType",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABA300#008"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAO057#004"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "Body White",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "OrderCodeOfManufacturer",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABA950#008"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAO227#004"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "SF-ST-BW-2026",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ProductArticleNumberOfManufacturer",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABA581#007"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAO676#005"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "SF-ST-BW",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "SerialNumber",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABA951#009"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAM556#004"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "ST-BW-20260714-001",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "YearOfConstruction",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABP000#002"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAP906#003"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "2026",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "DateOfManufacture",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABB757#007"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAR972#004"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:date",
+          "value": "2026-07-14",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "CountryOfOrigin",
+          "description": [
+            {
+              "language": "en",
+              "text": "Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0112/2///61987#ABP462#001"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "0173-1#02-AAO259#007"
+                }
+              ]
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "DE",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Digital Nameplate"
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "https://smartfactory.de/aas/submodels/nano/production-inventory/1",
+      "idShort": "Nano_ProductionInventory",
+      "kind": "Instance",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Nano ProductionInventory"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Nano-level life-cycle inventory for one identifiable product/order, using the three energy-sensitive stages highlighted in the paper."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://smartfactory.de/semanticid/NanoProductionInventorySubmodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ProcessEnergy",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "AdditiveManufacturingSemitrailer",
+              "valueType": "xs:double",
+              "value": "0.12",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SemitrailerSubassembly",
+              "valueType": "xs:double",
+              "value": "0.19",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "FinalAssembly",
+              "valueType": "xs:double",
+              "value": "0.151",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TotalProductionEnergy",
+              "valueType": "xs:double",
+              "value": "0.461",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/ProcessEnergyInventory"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Editable per-step electricity inputs and their calculated per-order total."
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaterialInputs",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "PLAWhiteMass",
+              "valueType": "xs:double",
+              "value": "0.016",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "PLABlueMass",
+              "valueType": "xs:double",
+              "value": "0.016",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TotalMaterialMass",
+              "valueType": "xs:double",
+              "value": "0.032",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "MaterialType",
+              "valueType": "xs:string",
+              "value": "PLA",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/MaterialType"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MaterialInventory"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CircularityInputs",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "RecycledContentFraction",
+              "valueType": "xs:double",
+              "value": "0.15",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RecycledContentFraction"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RenewableContentFraction",
+              "valueType": "xs:double",
+              "value": "0.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RenewableContentFraction"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ReusedPartFraction",
+              "valueType": "xs:double",
+              "value": "0.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ReusedPartFraction"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RecyclableOutputFraction",
+              "valueType": "xs:double",
+              "value": "0.85",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RecyclableOutputFraction"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CollectionRate",
+              "valueType": "xs:double",
+              "value": "0.9",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CollectionRate"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ProductLifetimeYears",
+              "valueType": "xs:double",
+              "value": "15",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ProductLifetime"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "year"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ReferenceLifetimeYears",
+              "valueType": "xs:double",
+              "value": "12",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ReferenceProductLifetime"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "year"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DisassemblyTimeMinutes",
+              "valueType": "xs:double",
+              "value": "4.5",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/DisassemblyTime"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "min"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RepairabilityScore",
+              "valueType": "xs:double",
+              "value": "0.65",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RepairabilityScore"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TakeBackOffered",
+              "valueType": "xs:boolean",
+              "value": "true",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/TakeBackOffered"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "HazardousSubstanceMass",
+              "valueType": "xs:double",
+              "value": "0.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/HazardousSubstanceMass"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "PreferredEndOfLifeRoute",
+              "valueType": "xs:string",
+              "value": "mechanical recycling",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/EndOfLifeRoute"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/CircularityInputs"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Focused CE content beyond the paper's energy and mass example."
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "EnvironmentalFactors",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductGWPWithoutElectricity",
+              "valueType": "xs:double",
+              "value": "0.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ProductionElectricityGWPFactor",
+              "valueType": "xs:double",
+              "value": "3.8177874186550973",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ProductionElectricityGWPFactor"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Demonstrator factor calibrated so 0.461 kWh reproduces the supplied AAS PCF value of 1.76 kg CO2-eq; replace with a verified LCI factor for research results."
+                }
+              ],
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/kWh"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/EnvironmentalFactors"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "https://smartfactory.de/aas/submodels/nano/circularity-and-lca/1",
+      "idShort": "Nano_CircularityAndLCA",
+      "kind": "Instance",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Nano CircularityAndLCA"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Calculated per-product CE and LCA results for screenshot-ready nano-level reporting."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://smartfactory.de/semanticid/NanoCircularityAndLCASubmodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "EnergyResults",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "TotalProductionEnergy",
+              "valueType": "xs:double",
+              "value": "0.461",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/EnergyResults"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "LCAResults",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductGWP",
+              "valueType": "xs:double",
+              "value": "1.76",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ImpactMethod",
+              "valueType": "xs:string",
+              "value": "EF 3.1 - GWP",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ImpactAssessmentMethod"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CalculationMethod",
+              "valueType": "xs:string",
+              "value": "nano electricity plus non-electricity baseline",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CalculationMethod"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/LCAResults"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CircularityResults",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "RecycledMaterialMass",
+              "valueType": "xs:double",
+              "value": "0.0048",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RenewableMaterialMass",
+              "valueType": "xs:double",
+              "value": "0.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "VirginMaterialMass",
+              "valueType": "xs:double",
+              "value": "0.0272",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RecyclableOutputMass",
+              "valueType": "xs:double",
+              "value": "0.0272",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "UnrecoverableWasteMass",
+              "valueType": "xs:double",
+              "value": "0.00752",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/UnrecoverableWasteMass"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CircularInputRate",
+              "valueType": "xs:double",
+              "value": "0.15",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CircularInputRate"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CircularOutputRate",
+              "valueType": "xs:double",
+              "value": "0.765",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CircularOutputRate"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CircularMaterialScore",
+              "valueType": "xs:double",
+              "value": "0.4575",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CircularMaterialScore"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Demonstrator score = mean(CircularInputRate, CircularOutputRate); it is not the standardized MCI or an ISO 59020 claim."
+                }
+              ],
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "LifetimeFactor",
+              "valueType": "xs:double",
+              "value": "1.25",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/LifetimeFactor"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/CircularityResults"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "idShort": "FactoryAutomationDataForPlant",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Factory Automation Data for Plant Planning"
+        }
+      ],
+      "administration": {
+        "version": "1",
+        "revision": "0",
+        "templateId": "https://admin-shell.io/idta-02075"
+      },
+      "id": "https://smartfactory.de/aas/submodels/micro/factory-automation-data-for-plant-planning/1",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ModelReference",
+        "keys": [
+          {
+            "type": "Submodel",
+            "value": "https://admin-shell.io/idta/cds/factoryAutomationDataForPlant/1"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "AutomationMLData",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "AutomationML Data"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Reference to the AutomationML project file that contains the engineering information of the asset."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/cds/automationMLData/1"
+              }
+            ]
+          },
+          "contentType": "text/plain",
+          "modelType": "File"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "AutomationMLVersion",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "AutomationML Version"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "The AML version that the included AML file follows. This should be either 1 (i.e. CAEX 2.15) or 2 (i.e. CAEX 3.0)."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/cds/automationMLVersion/1"
+              }
+            ]
+          },
+          "valueType": "xs:positiveInteger",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "AutomationMLElementReference",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "AutomationML Element Reference"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Reference to the AutomationML element hosting the engineering information of the asset."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/cds/automationMLElementReference/1"
+              }
+            ]
+          },
+          "modelType": "ReferenceElement"
+        },
+        {
+          "idShort": "AutomationMLAttributeAndInterfaceList",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "AutomationML Attribute and Interface List"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "List of AutomationML attributes to be published."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/cds/automationMLAttributeAndInterfaceList/1"
+              }
+            ]
+          },
+          "semanticIdListElement": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/cds/attributeContainer/1"
+              }
+            ]
+          },
+          "typeValueListElement": "SubmodelElementCollection",
+          "modelType": "SubmodelElementList"
+        }
+      ],
+      "modelType": "Submodel",
+      "description": [
+        {
+          "language": "en",
+          "text": "IDTA 02075 instance prepared for SmartFactory-KL. AutomationML data is intentionally unset until a factory-specific AML file is supplied."
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "https://smartfactory.de/aas/submodels/micro/reporting-and-energy/1",
+      "idShort": "Micro_ReportingAndEnergy",
+      "kind": "Instance",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Micro ReportingAndEnergy"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Micro-level annual reporting period, production volume, and non-attributable site energy; factory automation planning data is represented separately by IDTA 02075."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://smartfactory.de/semanticid/MicroReportingAndEnergySubmodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ReportingPeriod",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "StartDate",
+              "valueType": "xs:date",
+              "value": "2026-01-01",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ReportingPeriodStart"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "EndDate",
+              "valueType": "xs:date",
+              "value": "2026-12-31",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ReportingPeriodEnd"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "PeriodType",
+              "valueType": "xs:string",
+              "value": "annual",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ReportingPeriodType"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/ReportingPeriod"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ProductionProgram",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "AnnualProductionQuantity",
+              "valueType": "xs:integer",
+              "value": "3120",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ProductionQuantity"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "piece/year"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OrdersRepresentedByNanoAAS",
+              "valueType": "xs:integer",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/SourceOrderCount"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "order"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SharedProductSerial",
+              "valueType": "xs:string",
+              "value": "ST-BW-20260714-001",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ProductSerialIdentifier"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AllocationKey",
+              "valueType": "xs:string",
+              "value": "AnnualProductionQuantity",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/AllocationKey"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/ProductionProgram"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "FactoryEnergy",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "LightingEnergy",
+              "valueType": "xs:double",
+              "value": "755.2",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/year"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "HeatingEnergy",
+              "valueType": "xs:double",
+              "value": "4576",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/year"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "LightingGWPFactor",
+              "valueType": "xs:double",
+              "value": "0.5991790254237288",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/LightingGWPFactor"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/kWh"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "HeatingGWPFactor",
+              "valueType": "xs:double",
+              "value": "452.5786713286713",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/HeatingGWPFactor"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/kWh"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RenewableEnergyShare",
+              "valueType": "xs:double",
+              "value": "0.35",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RenewableEnergyShare"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/FactoryEnergy"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Non-order-attributable site flows from the paper plus explicit impact factors."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "https://smartfactory.de/aas/submodels/micro/aggregated-inventory/1",
+      "idShort": "Micro_AggregatedInventory",
+      "kind": "Instance",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Micro AggregatedInventory"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Annual micro-level inventory obtained from the nano product/order and factory-only flows without double counting."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://smartfactory.de/semanticid/MicroAggregatedInventorySubmodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "EnergyInventory",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductAttributedEnergy",
+              "valueType": "xs:double",
+              "value": "1438.32",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "NonAttributableFacilityEnergy",
+              "valueType": "xs:double",
+              "value": "5331.2",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TotalFactoryEnergy",
+              "valueType": "xs:double",
+              "value": "6769.52",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AllocatedFacilityEnergyPerProduct",
+              "valueType": "xs:double",
+              "value": "1.708717949",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/product"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MicroEnergyInventory"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Aggregation moves product-attributable energy upward; allocation partitions site energy downward."
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaterialInventory",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "TotalProductMass",
+              "valueType": "xs:double",
+              "value": "99.84",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RecycledMaterialMass",
+              "valueType": "xs:double",
+              "value": "14.976",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RenewableMaterialMass",
+              "valueType": "xs:double",
+              "value": "0.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "VirginMaterialMass",
+              "valueType": "xs:double",
+              "value": "84.864",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RecyclableOutputMass",
+              "valueType": "xs:double",
+              "value": "84.864",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "UnrecoverableWasteMass",
+              "valueType": "xs:double",
+              "value": "23.4624",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/UnrecoverableWasteMass"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MicroMaterialInventory"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "https://smartfactory.de/aas/submodels/micro/circularity-and-lca/1",
+      "idShort": "Micro_CircularityAndLCA",
+      "kind": "Instance",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Micro CircularityAndLCA"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Factory-level CE and GWP indicators calculated from linked nano product data and site-only energy."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://smartfactory.de/semanticid/MicroCircularityAndLCASubmodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "LCAResults",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductProductionGWP",
+              "valueType": "xs:double",
+              "value": "5491.2",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "LightingGWP",
+              "valueType": "xs:double",
+              "value": "452.5",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "HeatingGWP",
+              "valueType": "xs:double",
+              "value": "2071000",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TotalGWP",
+              "valueType": "xs:double",
+              "value": "2076943.7",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "GWPPerProduct",
+              "valueType": "xs:double",
+              "value": "665.687083333",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-ABG855#001"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg CO2-eq/product"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ImpactMethod",
+              "valueType": "xs:string",
+              "value": "EF 3.1 - GWP",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ImpactAssessmentMethod"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MicroLCAResults"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CEIndicators",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "CircularInputRate",
+              "valueType": "xs:double",
+              "value": "0.15",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CircularInputRate"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CircularOutputRate",
+              "valueType": "xs:double",
+              "value": "0.765",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CircularOutputRate"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CircularMaterialScore",
+              "valueType": "xs:double",
+              "value": "0.4575",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/CircularMaterialScore"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "UnrecoverableWasteMass",
+              "valueType": "xs:double",
+              "value": "23.4624",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/UnrecoverableWasteMass"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kg/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "EnergyIntensityPerProduct",
+              "valueType": "xs:double",
+              "value": "2.169717949",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/EnergyIntensity"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/product"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RenewableEnergyUse",
+              "valueType": "xs:double",
+              "value": "2369.332",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RenewableEnergyUse"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kWh/year"
+                },
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RepairabilityScore",
+              "valueType": "xs:double",
+              "value": "0.65",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/RepairabilityScore"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "TakeBackCoverage",
+              "valueType": "xs:double",
+              "value": "1.0",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/TakeBackCoverage"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ratio"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MicroCEIndicators"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "DataProvenance",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "SourceProductSerial",
+              "valueType": "xs:string",
+              "value": "ST-BW-20260714-001",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ProductSerialIdentifier"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SourceNanoAAS",
+              "valueType": "xs:anyURI",
+              "value": "https://smartfactory.de/aas/nano/semitrailer-body-white/1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/SourceAAS"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AggregationRule",
+              "valueType": "xs:string",
+              "value": "sum nano per-product flows multiplied by annual quantity; add factory-only flows once",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/AggregationRule"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AllocationRule",
+              "valueType": "xs:string",
+              "value": "divide non-attributable annual site flows by annual production quantity",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/AllocationRule"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "LastSynchronization",
+              "valueType": "xs:string",
+              "value": "not-yet-synchronized",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/SynchronizationTimestamp"
+                  }
+                ]
+              },
+              "qualifiers": [
+                {
+                  "type": "calculated",
+                  "valueType": "xs:boolean",
+                  "value": "true"
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/DataProvenance"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "https://smartfactory.de/aas/submodels/multilevel/linkage/1",
+      "idShort": "MultiLevel_Linkage",
+      "kind": "Instance",
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "displayName": [
+        {
+          "language": "en",
+          "text": "MultiLevel Linkage"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Explicit AAS references, product-instance join, semantic IDs, and aggregation/allocation directions shared by both levels."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://smartfactory.de/semanticid/MultiLevelLinkageSubmodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Join",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "SharedProductSerial",
+              "valueType": "xs:string",
+              "value": "ST-BW-20260714-001",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/ProductSerialIdentifier"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "JoinCardinality",
+              "valueType": "xs:string",
+              "value": "one representative product instance to one annual micro reporting record",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/JoinCardinality"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MultiLevelJoin"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "ReferenceElement",
+          "idShort": "NanoAASReference",
+          "value": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "AssetAdministrationShell",
+                "value": "https://smartfactory.de/aas/nano/semitrailer-body-white/1"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Reference to the product/order AAS."
+            }
+          ]
+        },
+        {
+          "modelType": "ReferenceElement",
+          "idShort": "MicroAASReference",
+          "value": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "AssetAdministrationShell",
+                "value": "https://smartfactory.de/aas/micro/smartfactory-kl/1"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Reference to the factory/reporting AAS."
+            }
+          ]
+        },
+        {
+          "modelType": "ReferenceElement",
+          "idShort": "NanoEnergySource",
+          "value": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "https://smartfactory.de/aas/submodels/nano/production-inventory/1"
+              },
+              {
+                "type": "SubmodelElementCollection",
+                "value": "ProcessEnergy"
+              },
+              {
+                "type": "Property",
+                "value": "TotalProductionEnergy"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "ReferenceElement",
+          "idShort": "MicroEnergyTarget",
+          "value": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "https://smartfactory.de/aas/submodels/micro/aggregated-inventory/1"
+              },
+              {
+                "type": "SubmodelElementCollection",
+                "value": "EnergyInventory"
+              },
+              {
+                "type": "Property",
+                "value": "ProductAttributedEnergy"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MappingSemantics",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "SharedEnergySemanticId",
+              "valueType": "xs:anyURI",
+              "value": "https://smartfactory.de/ids/cd/f83ccc28-dfbd-4581-a368-89fc675d504c",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/SharedSemanticId"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SharedMassSemanticId",
+              "valueType": "xs:anyURI",
+              "value": "https://smartfactory.de/ids/cd/004c97b1-89a7-4e94-906c-d167e6da6320",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/SharedSemanticId"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SharedGWPSemanticId",
+              "valueType": "xs:string",
+              "value": "0173-1#02-ABG855#001",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/SharedSemanticId"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AggregationDirection",
+              "valueType": "xs:string",
+              "value": "nano-to-micro",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/AggregationDirection"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AllocationDirection",
+              "valueType": "xs:string",
+              "value": "micro-to-nano",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://smartfactory.de/semanticid/AllocationDirection"
+                  }
+                ]
+              }
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smartfactory.de/semanticid/MappingSemantics"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "idShort": "URIOfTheProduct",
+      "id": "0112/2///61987#ABN590#002",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "URIOfTheProduct"
+              }
+            ],
+            "shortName": [
+              {
+                "language": "en",
+                "text": "URIOfTheProduct"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "unique global identification of the product instance using an universal resource identifier (URI)"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ManufacturerName",
+      "id": "0112/2///61987#ABA565#009",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ManufacturerName"
+              }
+            ],
+            "dataType": "STRING_TRANSLATABLE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ManufacturerProductDesignation",
+      "id": "0112/2///61987#ABA567#009",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ManufacturerProductDesignation"
+              }
+            ],
+            "dataType": "STRING_TRANSLATABLE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "short description of the product (short text), third or lowest level of a 3 level manufacturer specific product hierarchy"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ManufacturerProductRoot",
+      "id": "0112/2///61360_7#AAS011#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ManufacturerProductRoot"
+              }
+            ],
+            "dataType": "STRING_TRANSLATABLE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "top level of a 3 level manufacturer specific product hierarchy"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ManufacturerProductFamily",
+      "id": "0112/2///61987#ABP464#002",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ManufacturerProductFamily"
+              }
+            ],
+            "dataType": "STRING_TRANSLATABLE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "second level of a 3 level manufacturer specific product hierarchy"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ManufacturerProductType",
+      "id": "0112/2///61987#ABA300#008",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ManufacturerProductType"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "characteristic to differentiate between different products of a product family or special variants"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "OrderCodeOfManufacturer",
+      "id": "0112/2///61987#ABA950#008",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "OrderCodeOfManufacturer"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "unique combination of numbers and letters issued by the manufacturer that is used to identify the device for ordering"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ProductArticleNumberOfManufacturer",
+      "id": "0112/2///61987#ABA581#007",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ProductArticleNumberOfManufacturer"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "unique product identifier of the manufacturer"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "SerialNumber",
+      "id": "0112/2///61987#ABA951#009",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "SerialNumber"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "unique combination of numbers and letters used to identify the device once it has been manufactured"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "YearOfConstruction",
+      "id": "0112/2///61987#ABP000#002",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "YearOfConstruction"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "year in which the manufacturing process is completed"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "DateOfManufacture",
+      "id": "0112/2///61987#ABB757#007",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "DateOfManufacture"
+              }
+            ],
+            "dataType": "DATE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "date when an item was manufactured"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "HardwareVersion",
+      "id": "0112/2///61987#ABA926#008",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "HardwareVersion"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "version of the hardware supplied with the device"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "FirmwareVersion",
+      "id": "0112/2///61987#ABA302#006",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "FirmwareVersion"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "version of the firmware supplied with the device"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "SoftwareVersion",
+      "id": "0112/2///61987#ABA601#008",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "SoftwareVersion"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "version of the software used by the device"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "CountryOfOrigin",
+      "id": "0112/2///61987#ABP462#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "CountryOfOrigin"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "country where the product was manufactured"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "CompanyLogo",
+      "id": "0112/2///61987#ABP463#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "CompanyLogo"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "a graphic mark used to represent a company, an organisation or a product"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "AssetSpecificProperties",
+      "id": "0173-1#01-AGZ672#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "AssetSpecificProperties"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Group of properties that are listed on the asset's nameplate and are grouped based on guidelines"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "MarkingName",
+      "id": "0112/2///61987#ABA231#009",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "MarkingName"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "common name of the marking"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "DesignationOfCertificateOrApproval",
+      "id": "0112/2///61987#ABH783#003",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "DesignationOfCertificateOrApproval"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "alphanumeric character sequence identifying a certificate or approval"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "IssueDate",
+      "id": "0112/2///61987#ABO097#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "IssueDate"
+              }
+            ],
+            "dataType": "DATE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "date, at which the specified certificate is issued "
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ExpiryDate",
+      "id": "0112/2///61987#ABH830#002",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ExpiryDate"
+              }
+            ],
+            "dataType": "DATE",
+            "definition": [
+              {
+                "language": "en",
+                "text": "date, at which the specified certificate expires "
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "MarkingFile",
+      "id": "0112/2///61987#ABO100#002",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "MarkingFile"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "conformity symbol of the marking "
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "MarkingAdditionalText__00__",
+      "id": "0112/2///61987#ABB146#007",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "MarkingAdditionalText__00__"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "where applicable, additional information on the marking in plain text, e.g. the ID-number of the notified body involved in the conformity process"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "GuidelineSpecificProperties",
+      "id": "0173-1#01-AHD205#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "GuidelineSpecificProperties"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Asset specific nameplate information required by guideline, stipulation or legislation."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "GuidelineForConformityDeclaration",
+      "id": "0173-1#02-AAO856#002",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "GuidelineForConformityDeclaration"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "guideline, stipulation or legislation used for determining conformity"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ContactInformation",
+      "id": "https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ContactInformation"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "The SMC \u201cContactInformation\u201d contains information on how to contact the manufacturer or an authorised service provider, e.g. when a maintenance service is required"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "0173-1#02-AAQ837#005"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Markings",
+      "description": [
+        {
+          "language": "en",
+          "text": "Note: CE marking is declared as mandatory according to EU Machine Directive 2006/42/EC."
+        }
+      ],
+      "id": "https://admin-shell.io/zvei/nameplate/3/0/Nameplate/Markings",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Markings"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of product markings"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Marking",
+      "description": [
+        {
+          "language": "en",
+          "text": "Note: CE marking is declared as mandatory according to the Blue Guide of the EU-Commission"
+        }
+      ],
+      "id": "0112/2///61360_7#AAS009#001",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Marking"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Single marking information"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "GuidelineSpecificProperties",
+      "id": "http://admin-shell.io/IDTA/DigitalNameplate/GuidelineSpecificProperties/List/1/0",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "GuidelineSpecificProperties"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Information elements guided by a specific standard or guideline"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "UniqueFacilityIdentifier",
+      "id": "https://admin-shell.io/idta/nameplate/3/0/UniqueFacilityIdentifier",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "UniqueFacilityIdentifier"
+              }
+            ],
+            "dataType": "STRING",
+            "definition": [
+              {
+                "language": "en",
+                "text": "unique string of characters for the identification of locations or buildings involved in a product\u2019s value chain or used by actors involved in a product\u2019s value chain"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "FactoryAutomationDataForPlant",
+      "id": "https://admin-shell.io/idta/cds/factoryAutomationDataForPlant/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "FactoryAutomationDataForPlant"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Standardized representation of engineering building services (TGA) data for digital factory and plant planning, enabling consistent exchange of AutomationML-based planning data via the Asset Administration Shell."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/BuildingServices"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "AutomationMLData",
+      "id": "https://admin-shell.io/idta/cds/automationMLData/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "AutomationMLData"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Reference to the AutomationML project file that contains the engineering information of the asset."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/FileReference"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "AutomationMLVersion",
+      "description": [
+        {
+          "language": "en",
+          "text": "The AML version that the included AML file follows. This should be either 1 (i.e. CAEX 2.15) or 2 (i.e. CAEX 3.0)."
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/automationMLVersion/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "AutomationMLVersion"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "The AML version that the included AML file follows. This should be either 1 (i.e. CAEX 2.15) or 2 (i.e. CAEX 3.0)."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/VersionNumber"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "AutomationMLElementReference",
+      "description": [
+        {
+          "language": "en",
+          "text": "Reference to the AutomationML element hosting the engineering information of the asset."
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/automationMLElementReference/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "AutomationMLElementReference"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Reference to the AutomationML element hosting the engineering information of the asset."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/ElementReference"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "AutomationMLAttributeAndInterfaceList",
+      "description": [
+        {
+          "language": "en",
+          "text": "List of AutomationML attributes to be published."
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/automationMLAttributeAndInterfaceList/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "AutomationMLAttributeAndInterfaceList"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "List of AutomationML attributes to be published."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/AttributeAndInterfaceList"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "OnOff",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/onOff/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "OnOff"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "RelationBetweenPropertyAndAttribute",
+      "description": [
+        {
+          "language": "en",
+          "text": "Relation between related property SubmodelElements and corresponding AutomationML attribute."
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/relationBetweenPropertyAndAttribute/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "RelationBetweenPropertyAndAttribute"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Relation between related property SubmodelElements and corresponding AutomationML attribute."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AttributeRelation"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "articleNumber",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/articleNumber/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "articleNumber"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "nameOfSupplier",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/nameOfSupplier/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "nameOfSupplier"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "name",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/name/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "name"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "description",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/description/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "description"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "medium",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/medium/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "medium"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "comment",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/comment/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "comment"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "plant",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/plant/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "plant"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "diameter",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/diameter/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "diameter"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "overallLength",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/overallLength/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "overallLength"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "NominalVoltage",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/nominalVoltage/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "NominalVoltage"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "nominalPowerConsumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/nominalPowerConsumption/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "nominalPowerConsumption"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "maximalPowerConsumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/maximalPowerConsumption/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "maximalPowerConsumption"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "powerNominal",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/powerNominal/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "powerNominal"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "powerMaximal",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/powerMaximal/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "powerMaximal"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "xframe",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/xframe/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "xframe"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "yframe",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/yframe/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "yframe"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "zframe",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/zframe/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "zframe"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "rxframe",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/rxframe/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "rxframe"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ryframe",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/ryframe/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ryframe"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "rzframe",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of AutomationML Attributes to be published as properties"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/cds/rzframe/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "rzframe"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Collection of AutomationML Attributes to be published as properties"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AutomationMLAttribute"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "AttributeContainer",
+      "id": "https://admin-shell.io/idta/cds/attributeContainer/1",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "AttributeContainer"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Container grouping an AutomationML attribute that is published as a property together with its relation to the AutomationML source."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "isCaseOf": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/FactoryAutomationDataForPlant/AttributeContainer"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/AttributeContainer"
+            }
+          ]
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}
